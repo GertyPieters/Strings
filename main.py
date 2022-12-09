@@ -9,9 +9,11 @@ scorer_1 = 'Marco Van Basten '
 goal_0 = 32
 goal_1 = 54
 
-scorers = scorer_0 + f'{goal_0}', scorer_1 + f'{goal_1}'
-scorers = scorer_0 + str(goal_0), scorer_1 + str(goal_1)
+scorers = scorer_0 + f'{goal_0}' + ", " + scorer_1 + f'{goal_1}'
+#scorers = scorer_0 + str(goal_0) + ", " + scorer_1 + str(goal_1)
 print(scorers) 
+
+#Hij geeft nog steeds een foutmelding. Kan er niet uit halen wat er verkeerd gaat
 
 report = f'{scorer_0}scored in the {goal_0}nd minute \n{scorer_1}scored in the {goal_1}th minute'
 print(report)
@@ -20,14 +22,14 @@ player = 'Ronald Koeman'
 space = player.find(" ")
 print(space)
 
-first_name = player [0:space]
+first_name = player [:space]
 print(first_name)
 
 last_name = player [space +1:]
 print(last_name)
 print(len(last_name))
 
-name_short = player [0:1] + '. ' + last_name
+name_short = player [0] + '. ' + last_name
 print(name_short)
 
 name = first_name + '! '
